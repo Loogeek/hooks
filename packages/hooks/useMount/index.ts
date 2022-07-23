@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { isFunction } from '../utils';
+import { isFunction, isDevEnv } from '../utils';
 
-const useMount = (fn?: () => void) => {
+const useMount = (fn: () => void) => {
   if (process.env.NODE_ENV === 'development') {
     if (!isFunction(fn)) {
       console.error(
@@ -11,7 +11,7 @@ const useMount = (fn?: () => void) => {
   }
 
   useEffect(() => {
-    fn && fn();
+    fn?.();
   }, []);
 };
 
