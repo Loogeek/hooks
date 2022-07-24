@@ -8,8 +8,8 @@ interface ReturnType {
   toggle: () => void;
 }
 
-const useBoolean = (defaultValue?: boolean): ReturnType => {
-  const [value, setValue] = useState(!!defaultValue);
+const useBoolean = (defaultValue: boolean = false): ReturnType => {
+  const [value, setValue] = useState(defaultValue);
 
   const setTrue = useCallback(() => setValue(true), []);
   const setFalse = useCallback(() => setValue(false), []);

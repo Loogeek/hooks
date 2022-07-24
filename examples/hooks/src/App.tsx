@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLatest, useMount, useBoolean } from '../../../packages/hooks/index';
+import UseCounter from './demo/useCounter';
+import UseUnmount from './demo/useUnmount';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <span>count: {count}</span>
+      <h3>useBoolean</h3>
       <p>
         Value is <code>{value.toString()}</code>
       </p>
@@ -28,6 +31,10 @@ function App() {
       <button onClick={setFalse}>set false</button>
       <button onClick={toggle}>toggle</button>
       <button onClick={customToggle}>custom toggle</button>
+
+      <UseCounter />
+
+      <UseUnmount />
     </div>
   );
 }

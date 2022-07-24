@@ -69,6 +69,6 @@
   },
   "dependencies": {
     "esbuild-plugin-d.ts": "^1.1.0",
-    "react": "18"
+    "react": "^18.2.0"
   }
 }
