@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLatest, useMount, useBoolean } from '../../../packages/hooks/index';
 import UseCounter from './demo/useCounter';
 import UseUnmount from './demo/useUnmount';
+import UseDebounce from './demo/useDebounce';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +36,8 @@ function App() {
       <UseCounter />
 
       <UseUnmount />
+
+      <UseDebounce />
     </div>
   );
 }

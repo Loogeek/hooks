@@ -3,5 +3,6 @@ import useLatest from './useLatest';
 import useBoolean from './useBoolean';
 import useCounter from './useCounter';
 import useUnmount from './useUnmount';
+import useDebounce from './useDebounce';
 
-export { useMount, useBoolean, useLatest, useCounter, useUnmount };
+export { useMount, useBoolean, useLatest, useCounter, useUnmount, useDebounce };
