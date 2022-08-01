@@ -3,6 +3,7 @@ import { useLatest, useMount, useBoolean } from '../../../packages/hooks/index';
 import UseCounter from './demo/useCounter';
 import UseUnmount from './demo/useUnmount';
 import UseDebounce from './demo/useDebounce';
+import UseNetwork from './demo/useNetwork';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,6 +39,8 @@ function App() {
       <UseUnmount />
 
       <UseDebounce />
+
+      <UseNetwork />
     </div>
   );
 }
