@@ -4,6 +4,7 @@ import UseCounter from './demo/useCounter';
 import UseUnmount from './demo/useUnmount';
 import UseDebounce from './demo/useDebounce';
 import UseNetwork from './demo/useNetwork';
+import UseInterval from './demo/useInterval';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -41,6 +42,8 @@ function App() {
       <UseDebounce />
 
       <UseNetwork />
+
+      <UseInterval />
     </div>
   );
 }
