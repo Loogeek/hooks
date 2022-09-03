@@ -5,6 +5,7 @@ import UseUnmount from './demo/useUnmount';
 import UseDebounce from './demo/useDebounce';
 import UseNetwork from './demo/useNetwork';
 import UseInterval from './demo/useInterval';
+import UseMap from '../../../packages/hooks/useMap/demo'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <span>count: {count}</span>
+      {/* <span>count: {count}</span>
       <h3>useBoolean</h3>
       <p>
         Value is <code>{value.toString()}</code>
@@ -43,7 +44,10 @@ function App() {
 
       <UseNetwork />
 
-      <UseInterval />
+      <UseInterval /> */}
+
+      <UseMap />
+
     </div>
   );
 }
