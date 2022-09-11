@@ -12,6 +12,8 @@ import UseReactive1 from '../../../packages/hooks/useReactive/demo/demo1'
 import UseReactive2 from '../../../packages/hooks/useReactive/demo/demo2'
 import UseReactive3 from '../../../packages/hooks/useReactive/demo/demo3'
 import UseReactive4 from '../../../packages/hooks/useReactive/demo/demo4'
+import UseSetState from '../../../packages/hooks/useSetState/demo/index'
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -54,14 +56,15 @@ function App() {
 
       {/* <UseMap /> */}
 
-      <UseReactive />
+      {/* <UseReactive />
       <UseReactive1 />
       <UseReactive2 />
       <UseReactive3 />
-      <UseReactive4 />
+      <UseReactive4 /> */}
 
       {/* <UseUpdate /> */}
 
+      <UseSetState />
     </div>
   );
 }
