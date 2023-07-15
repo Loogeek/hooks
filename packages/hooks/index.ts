@@ -6,6 +6,7 @@ import useUnmount from './useUnmount';
 import useDebounce from './useDebounce';
 import useNetwork from './useNetwork';
 import useInterval from './useInterval';
+import useCopyToClipboard from './useCopyToClipboard';
 
 export {
   useMount,
@@ -16,4 +17,5 @@ export {
   useDebounce,
   useNetwork,
   useInterval,
+  useCopyToClipboard
 };

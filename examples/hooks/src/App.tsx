@@ -13,6 +13,7 @@ import UseReactive2 from '../../../packages/hooks/useReactive/demo/demo2'
 import UseReactive3 from '../../../packages/hooks/useReactive/demo/demo3'
 import UseReactive4 from '../../../packages/hooks/useReactive/demo/demo4'
 import UseSetState from '../../../packages/hooks/useSetState/demo/index'
+import UseCopyToClipboardDemo from './demo/useCopyToClipboard';
 
 
 function App() {
@@ -54,7 +55,7 @@ function App() {
 
       <UseInterval />
    */}
-      <UseMap />
+      {/* <UseMap /> */}
 
       {/* <UseReactive />
       <UseReactive1 />
@@ -64,7 +65,9 @@ function App() {
 
       {/* <UseUpdate /> */}
 
-      <UseSetState />
+      {/* <UseSetState /> */}
+      
+      <UseCopyToClipboardDemo />
     </div>
   );
 }
