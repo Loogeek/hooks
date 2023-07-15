@@ -34,27 +34,27 @@ function App() {
 
   return (
     <div className="App">
-      {/* <span>count: {count}</span>
-      <h3>useBoolean</h3>
+      {/* <span>count: {count}</span> */}
+      {/* <h3>useBoolean</h3>
       <p>
         Value is <code>{value.toString()}</code>
       </p>
       <button onClick={setTrue}>set true</button>
       <button onClick={setFalse}>set false</button>
       <button onClick={toggle}>toggle</button>
-      <button onClick={customToggle}>custom toggle</button>
+      <button onClick={customToggle}>custom toggle</button> */}
 
-      <UseCounter />
+      
 
-      <UseUnmount />
+      {/* <UseUnmount />
 
       <UseDebounce />
 
       <UseNetwork />
 
-      <UseInterval /> */}
-
-      {/* <UseMap /> */}
+      <UseInterval />
+   */}
+      <UseMap />
 
       {/* <UseReactive />
       <UseReactive1 />
