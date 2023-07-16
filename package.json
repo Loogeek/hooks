@@ -40,6 +40,7 @@
     "build": "rm -rf dist && node ./esbuild.js",
     "lint": "eslint .",
     "dev": "dumi dev",
+    "docs": "dumi build",
     "prepublishOnly": "nr esbuild",
     "release": "bumpp --commit --push --tag && npm publish",
     "start": "esno src/index.ts",
