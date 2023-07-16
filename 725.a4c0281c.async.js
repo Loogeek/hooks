@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhooks=self.webpackChunkhooks||[]).push([[725],{73725:function(u,_,e){e.r(_),e.d(_,{default:function(){return r}});var o=e(40765),s=e.n(o);function r(){var n=(typeof window=="undefined"?"undefined":s()(window))!==void 0&&window.document&&window.document.documentElement;return{isBrowser:n,isService:!n}}}}]);
