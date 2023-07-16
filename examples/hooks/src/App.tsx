@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLatest, useMount, useBoolean } from '../../../packages/hooks/index';
-import UseCounter from './demo/useCounter';
+import UseCounter from '../../../src/UseCounter';
 import UseUnmount from './demo/useUnmount';
 import UseDebounce from './demo/useDebounce';
 import UseNetwork from './demo/useNetwork';

@@ -1,6 +1,11 @@
+# useCounter
+
+This is an example component.
+
+```jsx
 import React from 'react';
 
-import { useCounter } from '../../../../packages/hooks/index';
+import { useCounter } from '../../packages/hooks/index';
 
 export default function Component() {
   const { count, setCount, increment, decrement, reset } = useCounter(0);
@@ -17,3 +22,5 @@ export default function Component() {
     </>
   );
 }
+
+```
