@@ -3,8 +3,8 @@ import { dtsPlugin } from 'esbuild-plugin-d.ts';
 
 esbuild
   .build({
-    entryPoints: ['packages/hooks/index.ts'],
-    outdir: 'dist/packages/hooks',
+    entryPoints: ['src/index.ts'],
+    outdir: 'dist/hooks',
     bundle: true,
     sourcemap: true,
     minify: true,

@@ -2,7 +2,7 @@
 
 ```jsx
 import React from 'react';
-import useSetState  from '..';
+import useSetState  from './index';
 
 interface State {
   hello: string;
