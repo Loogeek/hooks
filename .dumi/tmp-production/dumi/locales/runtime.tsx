@@ -17,7 +17,7 @@ const LocalesContainer: FC<{ children: ReactNode }> = (props) => {
         ? history.location.pathname.replace(/([^/])\/$/, '$1').endsWith(locale.suffix)
         // base mode
         : history.location.pathname.replace(/([^/])\/$/, '$1')
-          .startsWith("" + locale.base)
+          .startsWith("/hooks" + locale.base)
     ));
     const locale = matched ? matched.id : locales[0].id;
 
