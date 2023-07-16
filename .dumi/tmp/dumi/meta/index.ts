@@ -8,7 +8,10 @@ import { demos as dm3, frontmatter as fm3, toc as toc3, texts as txt3 } from '/U
 import { demos as dm4, frontmatter as fm4, toc as toc4, texts as txt4 } from '/Users/long.xiao/Documents/Github/hooks/src/useDebounce/index.md?type=meta';
 import { demos as dm5, frontmatter as fm5, toc as toc5, texts as txt5 } from '/Users/long.xiao/Documents/Github/hooks/src/useInterval/index.md?type=meta';
 import { demos as dm6, frontmatter as fm6, toc as toc6, texts as txt6 } from '/Users/long.xiao/Documents/Github/hooks/src/useNetwork/index.md?type=meta';
-import { demos as dm7, frontmatter as fm7, toc as toc7, texts as txt7 } from '/Users/long.xiao/Documents/Github/hooks/src/useUnmount/index.md?type=meta';
+import { demos as dm7, frontmatter as fm7, toc as toc7, texts as txt7 } from '/Users/long.xiao/Documents/Github/hooks/src/useReactive/index.md?type=meta';
+import { demos as dm8, frontmatter as fm8, toc as toc8, texts as txt8 } from '/Users/long.xiao/Documents/Github/hooks/src/useSetState/index.md?type=meta';
+import { demos as dm9, frontmatter as fm9, toc as toc9, texts as txt9 } from '/Users/long.xiao/Documents/Github/hooks/src/useUnmount/index.md?type=meta';
+import { demos as dm10, frontmatter as fm10, toc as toc10, texts as txt10 } from '/Users/long.xiao/Documents/Github/hooks/src/useUpdate/index.md?type=meta';
 
 export { components } from './atoms';
 export { tabs } from './tabs';
@@ -56,11 +59,29 @@ export const filesMeta = {
     texts: txt6,
     demos: dm6,
   },
-  'components/useUnmount/index': {
+  'components/useReactive/index': {
     frontmatter: fm7,
     toc: toc7,
     texts: txt7,
     demos: dm7,
+  },
+  'components/useSetState/index': {
+    frontmatter: fm8,
+    toc: toc8,
+    texts: txt8,
+    demos: dm8,
+  },
+  'components/useUnmount/index': {
+    frontmatter: fm9,
+    toc: toc9,
+    texts: txt9,
+    demos: dm9,
+  },
+  'components/useUpdate/index': {
+    frontmatter: fm10,
+    toc: toc10,
+    texts: txt10,
+    demos: dm10,
   },
 }
 

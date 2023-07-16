@@ -1,3 +1,6 @@
+# useSetState
+
+```jsx
 import React from 'react';
 import useSetState  from '..';
 
@@ -30,3 +33,4 @@ export default () => {
     </div>
   );
 };
+```

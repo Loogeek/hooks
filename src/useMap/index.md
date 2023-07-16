@@ -1,5 +1,9 @@
+# useMap
+
+```jsx
+
 import React from 'react';
-import useMap from '../index';
+import useMap from './index';
 
 export default () => {
   const [map, { set, remove, get, setAll, reset }] = useMap<string | number, string>([
@@ -32,3 +36,4 @@ export default () => {
     </div>
   );
 };
+```

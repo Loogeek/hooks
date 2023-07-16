@@ -1,5 +1,8 @@
+# useUpdate
+
+```jsx
 import React from 'react';
-import useUpdate from '..';
+import useUpdate from './index';
 
 export default () => {
   const update = useUpdate();
@@ -13,3 +16,4 @@ export default () => {
     </>
   );
 };
+```
