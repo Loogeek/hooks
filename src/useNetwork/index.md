@@ -1,5 +1,8 @@
+# useNetwork
+
+```jsx
 import React from 'react';
-import { useNetwork } from '../../../../packages/hooks';
+import useNetwork from './index.ts';
 
 export default () => {
   const networkState = useNetwork();
@@ -11,3 +14,4 @@ export default () => {
     </div>
   );
 };
+```

@@ -14,5 +14,5 @@
     "skipDefaultLibCheck": true,
     "baseUrl": "."
   },
-  "include": ["packages/**/*"]
+  "include": ["packages/**/*", "src/useCopyToClipboard/index.ts", "src/UseCounter/index.test.ts", "src/index.ts"]
 }

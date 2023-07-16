@@ -1,10 +1,10 @@
-# UseCopyToClipboardDemo
+# useCopyToClipboard
 
 This is an example component.
 
 ```jsx
 import React from 'react'
-import {useCopyToClipboard} from '../../packages/hooks'
+import useCopyToClipboard from './index'
 
 const UseCopyToClipboardDemo = () => {
   const [value, copy] = useCopyToClipboard()

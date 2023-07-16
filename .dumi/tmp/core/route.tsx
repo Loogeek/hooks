@@ -4,7 +4,7 @@
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"components/index":{"id":"components/index","path":"components","parentId":"DocLayout","meta":{"_atom_route":true}},"components/UseCopyToClipboard/index":{"id":"components/UseCopyToClipboard/index","path":"components/use-copy-to-clipboard","parentId":"DocLayout","meta":{"_atom_route":true}},"components/UseCounter/index":{"id":"components/UseCounter/index","path":"components/use-counter","parentId":"DocLayout","meta":{"_atom_route":true}},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout"}} as const;
+  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"components/index":{"id":"components/index","path":"components","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useBoolean/index":{"id":"components/useBoolean/index","path":"components/use-boolean","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useCopyToClipboard/index":{"id":"components/useCopyToClipboard/index","path":"components/use-copy-to-clipboard","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useCounter/index":{"id":"components/useCounter/index","path":"components/use-counter","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useDebounce/index":{"id":"components/useDebounce/index","path":"components/use-debounce","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useInterval/index":{"id":"components/useInterval/index","path":"components/use-interval","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useNetwork/index":{"id":"components/useNetwork/index","path":"components/use-network","parentId":"DocLayout","meta":{"_atom_route":true}},"components/useUnmount/index":{"id":"components/useUnmount/index","path":"components/use-unmount","parentId":"DocLayout","meta":{"_atom_route":true}},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout"}} as const;
   return {
     routes,
     routeComponents: {
@@ -12,8 +12,13 @@ export async function getRoutes() {
 'dumi-context-layout': React.lazy(() => import(/* webpackChunkName: "dumi__theme__ContextWrapper" */'@/dumi__theme/ContextWrapper')),
 'DocLayout': React.lazy(() => import(/* webpackChunkName: "dumi__theme__layouts__DocLayout" */'@/dumi__theme/layouts/DocLayout')),
 'components/index': React.lazy(() => import(/* webpackChunkName: "index.md" */'/Users/long.xiao/Documents/Github/hooks/src/index.md')),
-'components/UseCopyToClipboard/index': React.lazy(() => import(/* webpackChunkName: "UseCopyToClipboard__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/UseCopyToClipboard/index.md')),
-'components/UseCounter/index': React.lazy(() => import(/* webpackChunkName: "UseCounter__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/UseCounter/index.md')),
+'components/useBoolean/index': React.lazy(() => import(/* webpackChunkName: "useBoolean__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useBoolean/index.md')),
+'components/useCopyToClipboard/index': React.lazy(() => import(/* webpackChunkName: "useCopyToClipboard__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useCopyToClipboard/index.md')),
+'components/useCounter/index': React.lazy(() => import(/* webpackChunkName: "useCounter__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useCounter/index.md')),
+'components/useDebounce/index': React.lazy(() => import(/* webpackChunkName: "useDebounce__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useDebounce/index.md')),
+'components/useInterval/index': React.lazy(() => import(/* webpackChunkName: "useInterval__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useInterval/index.md')),
+'components/useNetwork/index': React.lazy(() => import(/* webpackChunkName: "useNetwork__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useNetwork/index.md')),
+'components/useUnmount/index': React.lazy(() => import(/* webpackChunkName: "useUnmount__index.md" */'/Users/long.xiao/Documents/Github/hooks/src/useUnmount/index.md')),
 'demo-render': React.lazy(() => import(/* webpackChunkName: "dumi__pages__Demo" */'@/dumi__pages/Demo')),
 },
   };

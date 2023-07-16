@@ -1,4 +1,8 @@
-import { useUnmount, useBoolean } from '../../../../packages/hooks';
+# useUnmount
+
+```jsx
+import useUnmount from './index';
+import useBoolean from '../useBoolean';
 
 const MyComponent = () => {
   useUnmount(() => {
@@ -21,3 +25,4 @@ const Component = () => {
 };
 
 export default Component;
+```

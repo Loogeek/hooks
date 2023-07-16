@@ -1,5 +1,8 @@
+# useInterval
+
+```jsx
 import React, { useState } from 'react';
-import { useInterval } from '../../../../packages/hooks';
+import useInterval from './index';
 
 export default () => {
   const [count, setCount] = useState(0);
@@ -31,3 +34,4 @@ export default () => {
     </div>
   );
 };
+```

@@ -1,5 +1,8 @@
+# useDebounce
+
+```jsx
 import { useState } from 'react';
-import { useDebounce } from '../../../../packages/hooks';
+import useDebounce from './index';
 
 const Component = () => {
   const [value, setState] = useState('');
@@ -16,3 +19,4 @@ const Component = () => {
 };
 
 export default Component;
+```

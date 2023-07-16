@@ -9,7 +9,7 @@ interface ReturnUseCount {
   reset: () => void;
 }
 
-const useCount = (defaultValue?: number): ReturnUseCount => {
+const useCounter = (defaultValue?: number): ReturnUseCount => {
   const [count, setCount] = useState(defaultValue || 0);
   const latestValue = useLatest(count);
 
@@ -20,4 +20,4 @@ const useCount = (defaultValue?: number): ReturnUseCount => {
   return { count, setCount, increment, decrement, reset };
 };
 
-export default useCount;
+export default useCounter;
