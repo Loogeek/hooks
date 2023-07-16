@@ -28,54 +28,61 @@ jobs:
       - name: Lint
         run: nr lint
 
-  typecheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-
-      - name: Setup
-        run: npm i -g @antfu/ni
-
-      - name: Install
-        run: nci
-
-      - name: Typecheck
-        run: nr typecheck
-
-  test:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        node: [14.x, 16.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
-      fail-fast: false
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set node ${{ matrix.node }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: Setup
-        run: npm i -g @antfu/ni
-
-      - name: Install
-        run: nci
-
       - name: Build
-        run: nr docs:build
-
-      # - name: Test
-      #   run: nr test
-
-      - name: Deploy to Github
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+        run: pnpm run docs:build
+        
+      - name: upload production artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          branch: build
-          folder: docs
+          path: docs
+
+      # deploy
+      - name: Deploy Page To Release
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+  # typecheck:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: Set node
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16.x
+
+  #     - name: Setup
+  #       run: npm i -g @antfu/ni
+
+  #     - name: Install
+  #       run: nci
+
+  #     - name: Typecheck
+  #       run: nr typecheck
+
+  # test:
+  #   runs-on: ${{ matrix.os }}
+
+  #   strategy:
+  #     matrix:
+  #       node: [14.x, 16.x]
+  #       os: [ubuntu-latest, windows-latest, macos-latest]
+  #     fail-fast: false
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: Set node ${{ matrix.node }}
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: ${{ matrix.node }}
+
+  #     - name: Setup
+  #       run: npm i -g @antfu/ni
+
+  #     - name: Install
+  #       run: nci
+
+  #     - name: Build
+  #       run: nr docs:build
+
+  #     - name: Test
+  #       run: nr test
