@@ -1,9 +1,9 @@
-# useEffectOne 
+# useEffectOnce 
 
 ```jsx
 import {useEffect, useState} from 'react';
 
-import {useEffectOnce} from './index';
+import { useEffectOnce } from './index'
 
 export default function Component() {
   const [data, setData] = useState<number>(0)

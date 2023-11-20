@@ -3,14 +3,14 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useEffect, useState } from 'react';
 import { ApplyPluginsType } from 'umi';
-import { renderClient, RenderClientOpts } from '/Users/long.xiao/Documents/Github/hooks/node_modules/.pnpm/registry.npmmirror.com+@umijs+renderer-react@4.0.72_ef5jwxihqo6n7gxfmzogljlgcm/node_modules/@umijs/renderer-react';
+import { renderClient, RenderClientOpts } from '/Users/long.xiao/Documents/Github/hooks/node_modules/.pnpm/registry.npmmirror.com+@umijs+renderer-react@4.0.72_react-dom@18.1.0_react@18.1.0/node_modules/@umijs/renderer-react';
 import { createHistory } from './core/history';
 import { createPluginManager } from './core/plugin';
 import { getRoutes } from './core/route';
 import type { Location } from 'history';
 
 import { getPluginManager as getDumiPluginManager } from './core/plugin';
-import { setPluginManager as setDumiPluginManager } from '/Users/long.xiao/Documents/Github/hooks/node_modules/.pnpm/registry.npmmirror.com+dumi@2.2.1_6rzba2rxqjc2dw36rowdiq7pwq/node_modules/dumi/dist/client/theme-api/utils.js';
+import { setPluginManager as setDumiPluginManager } from '/Users/long.xiao/Documents/Github/hooks/node_modules/.pnpm/registry.npmmirror.com+dumi@2.2.1_@babel+core@7.22.9_@types+node@17.0.45_@types+react@18.0.15_kx2hpg3w7e5wo3sg7mngpc3tya/node_modules/dumi/dist/client/theme-api/utils.js';
 const publicPath = '/';
 const runtimePublicPath = false;
 

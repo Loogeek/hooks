@@ -1,13 +1,13 @@
 import {useEffect} from 'react'
 import {renderHook} from '@testing-library/react-hooks/dom'
 import {describe, it, vi, expect} from 'vitest'
-import { useEffectOne } from './index'
+import { useEffectOnce } from './index'
 
-describe('useEffectOne', () => {
+describe('useEffectOnce', () => {
   it('should be triggered only once', () => {
     const effectFn = vi.fn();
     
-    const {rerender}=renderHook(() => useEffectOne(effectFn))
+    const {rerender}=renderHook(() => useEffectOnce(effectFn))
 
     expect(effectFn).toBeCalledTimes(1)
 
