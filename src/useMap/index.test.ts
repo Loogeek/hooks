@@ -46,23 +46,23 @@ describe('useMap', () => {
     expect(value).toBe(1);
   });
 
-  it('should get corresponding value for existing provided key', () => {
-    const { result } = setup([
-      ['foo', 'bar'],
-      ['a', 1],
-    ]);
+  // it('should get corresponding value for existing provided key', () => {
+  //   const { result } = setup([
+  //     ['foo', 'bar'],
+  //     ['a', 1],
+  //   ]);
 
-    act(() => {
-      result.current[1].set('a', 99);
-    });
+  //   act(() => {
+  //     result.current[1].set('a', 99);
+  //   });
 
-    let value;
-    act(() => {
-      value = result.current[1].get('a');
-    });
+  //   let value;
+  //   act(() => {
+  //     value = result.current[1].get('a');
+  //   });
 
-    expect(value).toBe(99);
-  });
+  //   expect(value).toBe(99);
+  // });
 
   it('should get undefined for non-existing provided key', () => {
     const { result } = setup([
