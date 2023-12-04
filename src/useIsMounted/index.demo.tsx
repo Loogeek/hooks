@@ -44,7 +44,7 @@ function Child() {
   return <p>{data}</p>
 }
 
-export  function UseIsMountedDemo() {
+export function UseIsMountedDemo() {
   const [isVisible, setVisible] = useState<boolean>(false)
 
   const toggleVisibility = () => setVisible(state => !state)
